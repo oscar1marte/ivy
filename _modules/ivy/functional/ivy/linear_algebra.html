@@ -41,8 +41,8 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../related_work.html">Related Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../extensions.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../roadmap.html">Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
@@ -149,10 +149,10 @@
 <span class="c1"># -------------------#</span>
 
 
-<div class="viewcode-block" id="cholesky"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/cholesky/cholesky_functional.html#ivy.functional.ivy.linear_algebra.cholesky">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="cholesky"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/cholesky/cholesky_functional.html#ivy.functional.ivy.linear_algebra.cholesky">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">cholesky</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -286,10 +286,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">cholesky</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="n">upper</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="cross"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/cross/cross_functional.html#ivy.functional.ivy.linear_algebra.cross">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="cross"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/cross/cross_functional.html#ivy.functional.ivy.linear_algebra.cross">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">cross</span><span class="p">(</span>
     <span class="n">x1</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="n">x2</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
@@ -376,10 +376,10 @@
     <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="det"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/det/det_functional.html#ivy.functional.ivy.linear_algebra.det">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="det"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/det/det_functional.html#ivy.functional.ivy.linear_algebra.det">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">det</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span> <span class="o">/</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">out</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
@@ -444,10 +444,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="diagonal"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/diagonal/diagonal_functional.html#ivy.functional.ivy.linear_algebra.diagonal">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="diagonal"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/diagonal/diagonal_functional.html#ivy.functional.ivy.linear_algebra.diagonal">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">diagonal</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -625,10 +625,10 @@
     <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="eigh"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/eigh/eigh_functional.html#ivy.functional.ivy.linear_algebra.eigh">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="eigh"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/eigh/eigh_functional.html#ivy.functional.ivy.linear_algebra.eigh">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">eigh</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -688,10 +688,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">eigh</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">UPLO</span><span class="o">=</span><span class="n">UPLO</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="eigvalsh"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/eigvalsh/eigvalsh_functional.html#ivy.functional.ivy.linear_algebra.eigvalsh">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="eigvalsh"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/eigvalsh/eigvalsh_functional.html#ivy.functional.ivy.linear_algebra.eigvalsh">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">eigvalsh</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -739,10 +739,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">eigvalsh</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">UPLO</span><span class="o">=</span><span class="n">UPLO</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="inner"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/inner/inner_functional.html#ivy.functional.ivy.linear_algebra.inner">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="inner"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/inner/inner_functional.html#ivy.functional.ivy.linear_algebra.inner">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span>
     <span class="n">x1</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="n">x2</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
@@ -776,10 +776,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span><span class="o">.</span><span class="n">inner</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="inv"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/inv/inv_functional.html#ivy.functional.ivy.linear_algebra.inv">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="inv"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/inv/inv_functional.html#ivy.functional.ivy.linear_algebra.inv">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">inv</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -868,10 +868,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">adjoint</span><span class="o">=</span><span class="n">adjoint</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="matmul"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matmul/matmul_functional.html#ivy.functional.ivy.linear_algebra.matmul">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="matmul"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matmul/matmul_functional.html#ivy.functional.ivy.linear_algebra.matmul">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">matmul</span><span class="p">(</span>
     <span class="n">x1</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="n">x2</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
@@ -1010,10 +1010,10 @@
     <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="matrix_norm"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matrix_norm/matrix_norm_functional.html#ivy.functional.ivy.linear_algebra.matrix_norm">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="matrix_norm"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matrix_norm/matrix_norm_functional.html#ivy.functional.ivy.linear_algebra.matrix_norm">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">matrix_norm</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -1156,10 +1156,10 @@
     <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="matrix_power"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matrix_power/matrix_power_functional.html#ivy.functional.ivy.linear_algebra.matrix_power">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="matrix_power"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matrix_power/matrix_power_functional.html#ivy.functional.ivy.linear_algebra.matrix_power">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">matrix_power</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="o">/</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">out</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
@@ -1196,10 +1196,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">matrix_power</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="matrix_rank"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matrix_rank/matrix_rank_functional.html#ivy.functional.ivy.linear_algebra.matrix_rank">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="matrix_rank"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matrix_rank/matrix_rank_functional.html#ivy.functional.ivy.linear_algebra.matrix_rank">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">matrix_rank</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -1298,29 +1298,31 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">matrix_rank</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">atol</span><span class="o">=</span><span class="n">atol</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="n">rtol</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="matrix_transpose"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matrix_transpose/matrix_transpose_functional.html#ivy.functional.ivy.linear_algebra.matrix_transpose">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="matrix_transpose"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/matrix_transpose/matrix_transpose_functional.html#ivy.functional.ivy.linear_algebra.matrix_transpose">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">matrix_transpose</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span> <span class="o">/</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">out</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Transposes a matrix (or a stack of matrices) ``x``.</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Transposes a matrix (or a stack of matrices) ``x``.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    x</span>
-<span class="sd">        input array having shape ``(..., M, N)`` and whose innermost two dimensions form</span>
-<span class="sd">        ``MxN`` matrices.</span>
+<span class="sd">        input array having shape ``(..., M, N)`` and whose innermost two</span>
+<span class="sd">        dimensions form ``MxN`` matrices.</span>
 <span class="sd">    out</span>
-<span class="sd">        optional output array, for writing the result to. It must have a shape that the</span>
-<span class="sd">        inputs broadcast to.</span>
+<span class="sd">        optional output array, for writing the result to. It must have a</span>
+<span class="sd">        shape that the inputs broadcast to.</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
 <span class="sd">    ret</span>
 <span class="sd">        an array containing the transpose for each matrix and having shape</span>
-<span class="sd">        ``(..., N, M)``. The returned array must have the same data type as ``x``.</span>
+<span class="sd">        ``(..., N, M)``. The returned array must have the same data</span>
+<span class="sd">        type as ``x``.</span>
 
 
 <span class="sd">    This function conforms to the `Array API Standard</span>
@@ -1332,14 +1334,56 @@
 <span class="sd">    but this function is *nestable*, and therefore also accepts :class:`ivy.Container`</span>
 <span class="sd">    instances in place of any of the arguments.</span>
 
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    With :code: &#39;ivy.Array&#39; inputs:</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([[0., 2.], [1., 3.]])</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.matrix_transpose(x)</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    ivy.array([[0., 1.],</span>
+<span class="sd">               [2., 3.]])</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([[1., 4.], [2., 5.], [3., 1.]])</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.zeros((3, 2))</span>
+<span class="sd">    &gt;&gt;&gt; ivy.matrix_transpose(x, out=y)</span>
+<span class="sd">    ivy.array([[1., 2., 3.],</span>
+<span class="sd">               [4., 5., 1.]])</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([[2., 3.], [1., 2.]])</span>
+<span class="sd">    &gt;&gt;&gt; ivy.matrix_transpose(x, out=x)</span>
+<span class="sd">    ivy.array([[2., 1.],</span>
+<span class="sd">       [3., 2.]])</span>
+
+<span class="sd">    With :code:`ivy.NativeArray` input:</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.native_array([[0., 1., 2.], [1., 2., 3.]])</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.matrix_transpose(x)</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    ivy.array([[0., 1.],</span>
+<span class="sd">               [1., 2.],</span>
+<span class="sd">               [2., 3.]])</span>
+
+<span class="sd">    With :code: &#39;ivy.Container&#39; inputs:</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([[0., 1.], [0., 2.]]), \</span>
+<span class="sd">                          b=ivy.array([[3., 4.], [3., 5.]]))</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.matrix_transpose(x)</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    {</span>
+<span class="sd">        a: ivy.array([[0., 0.],</span>
+<span class="sd">                      [1., 2.]]),</span>
+<span class="sd">        b: ivy.array([[3., 3.],</span>
+<span class="sd">                      [4., 5.]])</span>
+<span class="sd">    }</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">matrix_transpose</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="outer"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/outer/outer_functional.html#ivy.functional.ivy.linear_algebra.outer">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="outer"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/outer/outer_functional.html#ivy.functional.ivy.linear_algebra.outer">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">outer</span><span class="p">(</span>
     <span class="n">x1</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="n">x2</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
@@ -1422,10 +1466,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="pinv"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/pinv/pinv_functional.html#ivy.functional.ivy.linear_algebra.pinv">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="pinv"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/pinv/pinv_functional.html#ivy.functional.ivy.linear_algebra.pinv">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">pinv</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -1491,9 +1535,9 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="n">rtol</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="qr"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/qr/qr_functional.html#ivy.functional.ivy.linear_algebra.qr">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="qr"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/qr/qr_functional.html#ivy.functional.ivy.linear_algebra.qr">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">qr</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -1548,9 +1592,9 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">qr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="slogdet"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/slogdet/slogdet_functional.html#ivy.functional.ivy.linear_algebra.slogdet">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="slogdet"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/slogdet/slogdet_functional.html#ivy.functional.ivy.linear_algebra.slogdet">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">slogdet</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -1618,10 +1662,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">slogdet</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="solve"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/solve/solve_functional.html#ivy.functional.ivy.linear_algebra.solve">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="solve"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/solve/solve_functional.html#ivy.functional.ivy.linear_algebra.solve">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">solve</span><span class="p">(</span>
     <span class="n">x1</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="n">x2</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
@@ -1671,9 +1715,9 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="svd"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/svd/svd_functional.html#ivy.functional.ivy.linear_algebra.svd">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="svd"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/svd/svd_functional.html#ivy.functional.ivy.linear_algebra.svd">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">svd</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -1773,10 +1817,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_uv</span><span class="o">=</span><span class="n">compute_uv</span><span class="p">,</span> <span class="n">full_matrices</span><span class="o">=</span><span class="n">full_matrices</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="svdvals"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/svdvals/svdvals_functional.html#ivy.functional.ivy.linear_algebra.svdvals">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="svdvals"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/svdvals/svdvals_functional.html#ivy.functional.ivy.linear_algebra.svdvals">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">svdvals</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span> <span class="o">/</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">out</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
@@ -1895,10 +1939,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">svdvals</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="tensordot"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/tensordot/tensordot_functional.html#ivy.functional.ivy.linear_algebra.tensordot">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="tensordot"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/tensordot/tensordot_functional.html#ivy.functional.ivy.linear_algebra.tensordot">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">tensordot</span><span class="p">(</span>
     <span class="n">x1</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="n">x2</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
@@ -1976,10 +2020,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span><span class="o">.</span><span class="n">tensordot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">axes</span><span class="o">=</span><span class="n">axes</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="trace"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/trace/trace_functional.html#ivy.functional.ivy.linear_algebra.trace">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="trace"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/trace/trace_functional.html#ivy.functional.ivy.linear_algebra.trace">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">trace</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -2089,10 +2133,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="n">offset</span><span class="p">,</span> <span class="n">axis1</span><span class="o">=</span><span class="n">axis1</span><span class="p">,</span> <span class="n">axis2</span><span class="o">=</span><span class="n">axis2</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="vecdot"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/vecdot/vecdot_functional.html#ivy.functional.ivy.linear_algebra.vecdot">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="vecdot"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/vecdot/vecdot_functional.html#ivy.functional.ivy.linear_algebra.vecdot">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">vecdot</span><span class="p">(</span>
     <span class="n">x1</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="n">x2</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
@@ -2154,10 +2198,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span><span class="o">.</span><span class="n">vecdot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="vector_norm"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/vector_norm/vector_norm_functional.html#ivy.functional.ivy.linear_algebra.vector_norm">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="vector_norm"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/vector_norm/vector_norm_functional.html#ivy.functional.ivy.linear_algebra.vector_norm">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">vector_norm</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -2251,36 +2295,89 @@
 <span class="c1"># ------#</span>
 
 
-<div class="viewcode-block" id="diag"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/diag.html#ivy.functional.ivy.linear_algebra.diag">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="diag"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/diag/diag_functional.html#ivy.functional.ivy.linear_algebra.diag">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">diag</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
     <span class="o">*</span><span class="p">,</span>
-    <span class="n">offset</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="n">padding_value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="n">align</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;RIGHT_LEFT&quot;</span><span class="p">,</span>
-    <span class="n">num_rows</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">num_cols</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
     <span class="n">out</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="p">):</span>
-    <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span>
-        <span class="n">x</span><span class="p">,</span>
-        <span class="n">offset</span><span class="o">=</span><span class="n">offset</span><span class="p">,</span>
-        <span class="n">padding_value</span><span class="o">=</span><span class="n">padding_value</span><span class="p">,</span>
-        <span class="n">align</span><span class="o">=</span><span class="n">align</span><span class="p">,</span>
-        <span class="n">num_rows</span><span class="o">=</span><span class="n">num_rows</span><span class="p">,</span>
-        <span class="n">num_cols</span><span class="o">=</span><span class="n">num_cols</span><span class="p">,</span>
-        <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">,</span>
-    <span class="p">)</span></div>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Returns the specified diagonals of the input array,</span>
+<span class="sd">    or an array with the input array&#39;s elements as diagonals.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    x</span>
+<span class="sd">        An array with rank &gt;= 1.</span>
+<span class="sd">    k</span>
+<span class="sd">        An integer that controls which diagonal to consider.</span>
+<span class="sd">        Positive value means superdiagonal,</span>
+<span class="sd">        0 refers to the main diagonal,</span>
+<span class="sd">        and negative value means subdiagonal.</span>
+<span class="sd">    out</span>
+<span class="sd">        optional output array, for writing the result to. It must have a shape that the</span>
+<span class="sd">        inputs broadcast to.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    ret</span>
+<span class="sd">        If x is a 1-D array, the function returns a 2-D square array with the elements</span>
+<span class="sd">        of input as diagonals.</span>
+<span class="sd">        If x is a 2-D array, the function returns a 1-D array with the diagonal elements</span>
+<span class="sd">        of x.</span>
 
 
-<div class="viewcode-block" id="vander"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/vander/vander_functional.html#ivy.functional.ivy.linear_algebra.vander">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<span class="sd">    This function conforms to the `Array API Standard</span>
+<span class="sd">    &lt;https://data-apis.org/array-api/latest/&gt;`_. This docstring is an extension of the</span>
+<span class="sd">    `docstring &lt;https://data-apis.org/array-api/latest/extensions/generated/signatures.linalg.diagonal.html&gt;`_ </span>
+<span class="sd">    in the standard.</span>
+
+<span class="sd">    Both the description and the type hints above assumes an array input for simplicity,</span>
+<span class="sd">    but this function is *nestable*, and therefore also accepts :class:`ivy.Container`</span>
+<span class="sd">    instances in place of any of the arguments.</span>
+
+<span class="sd">    Functional Examples</span>
+<span class="sd">    ------------------</span>
+
+<span class="sd">    With :class:`ivy.Array` inputs:</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([[0, 1, 2],</span>
+<span class="sd">    &gt;&gt;&gt;                [3, 4, 5],</span>
+<span class="sd">    &gt;&gt;&gt;                [6, 7, 8]])</span>
+<span class="sd">    &gt;&gt;&gt; ivy.diag(x)</span>
+<span class="sd">    ivy.array([0, 4, 8])</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([[0, 1, 2],</span>
+<span class="sd">    &gt;&gt;&gt;                [3, 4, 5],</span>
+<span class="sd">    &gt;&gt;&gt;                [6, 7, 8]])</span>
+<span class="sd">    &gt;&gt;&gt; ivy.diag(x, k=1)</span>
+<span class="sd">    ivy.array([1, 5])</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([[0, 1, 2],</span>
+<span class="sd">    &gt;&gt;&gt;                [3, 4, 5],</span>
+<span class="sd">    &gt;&gt;&gt;                [6, 7, 8]])</span>
+<span class="sd">    &gt;&gt;&gt; ivy.diag(x, k=-1)</span>
+<span class="sd">    ivy.array([3, 7])</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([[0, 1, 2],</span>
+<span class="sd">    &gt;&gt;&gt;                [3, 4, 5],</span>
+<span class="sd">    &gt;&gt;&gt;                [6, 7, 8]])</span>
+<span class="sd">    &gt;&gt;&gt; ivy.diag(ivy.diag(x))</span>
+<span class="sd">    ivy.array([[0, 0, 0],</span>
+<span class="sd">               [0, 4, 0],</span>
+<span class="sd">               [0, 0, 8]])</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">current_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="vander"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/vander/vander_functional.html#ivy.functional.ivy.linear_algebra.vander">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">vander</span><span class="p">(</span>
     <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
     <span class="o">/</span><span class="p">,</span>
@@ -2348,10 +2445,10 @@
     <span class="k">return</span> <span class="n">current_backend</span><span class="p">()</span><span class="o">.</span><span class="n">vander</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">N</span><span class="o">=</span><span class="n">N</span><span class="p">,</span> <span class="n">increasing</span><span class="o">=</span><span class="n">increasing</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="vector_to_skew_symmetric_matrix"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/vector_to_skew_symmetric_matrix/vector_to_skew_symmetric_matrix_functional.html#ivy.functional.ivy.linear_algebra.vector_to_skew_symmetric_matrix">[docs]</a><span class="nd">to_native_arrays_and_back</span>
-<span class="nd">handle_out_argument</span>
-<span class="nd">handle_nestable</span>
-<span class="nd">handle_exceptions</span>
+<div class="viewcode-block" id="vector_to_skew_symmetric_matrix"><a class="viewcode-back" href="../../../../functional/ivy/linear_algebra/vector_to_skew_symmetric_matrix/vector_to_skew_symmetric_matrix_functional.html#ivy.functional.ivy.linear_algebra.vector_to_skew_symmetric_matrix">[docs]</a><span class="nd">@to_native_arrays_and_back</span>
+<span class="nd">@handle_out_argument</span>
+<span class="nd">@handle_nestable</span>
+<span class="nd">@handle_exceptions</span>
 <span class="k">def</span> <span class="nf">vector_to_skew_symmetric_matrix</span><span class="p">(</span>
     <span class="n">vector</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span> <span class="o">/</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">out</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
